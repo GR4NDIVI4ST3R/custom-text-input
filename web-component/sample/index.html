@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Text Input</title>
+</head>
+<body>
+
+    <style>
+        /* Note: text-input does not currently work with outside CSS styling */
+        /* To give your inputs a margin, for example, for now place them into a div and style the div */
+
+        .btn {
+            margin-top: 1em;
+        }
+    </style>
+
+    <text-input id="input1" auto-focus></text-input>
+    <text-input id="input2" type="password" label="Password"></text-input>
+    <text-input id="input3" font-size="26px" height="60px" animation-duration="0.5s"></text-input>
+    <text-input id="input4" label-size="26px" height="60px" animation-duration="0.5s"></text-input>
+    <text-input id="input5" accent-color="red"></text-input>
+    <text-input id="input6" placeholder-color="var(--blue)" text-color="var(--blue)" accent-color="var(--bluish-black)"></text-input>
+    <!-- <text-input placeholder-color="red"></text-input> -->
+
+
+    <button id="btn1" class="btn">Fill Fields</button>
+    <button id="btn2" class="btn">Clear All Fields</button>
+    <button id="btn3" class="btn">Toggle Read Only</button>
+
+    <script src="./text-input.js"></script>
+
+</body>
+</html>
