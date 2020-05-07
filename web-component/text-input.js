@@ -1,6 +1,6 @@
 /* Hello! custom-text-input-element.js is a custom text input HTML Element mini-library by Xavior Pautin
    that creates a modern text input web component.
-   Version 2.0;
+   Version Beta 1.0.0;
    28 Apr. 2020;
 */
 
@@ -279,23 +279,3 @@ class textInput extends HTMLElement {
     
 }
 window.customElements.define('text-input', textInput);
-
-// Fill Fields btn
-document.getElementById('btn1').addEventListener('click', () => {
-    Array.from(document.getElementsByTagName('text-input')).forEach(element => {
-        element.changeValue('John Doe');
-    });
-});
-
-// Clear All Fields btn
-document.getElementById('btn2').addEventListener('click', () => {
-    Array.from(document.getElementsByTagName('text-input')).forEach(element => {
-        element.changeValue('');
-    });
-
-});
-document.getElementById('btn3').addEventListener('click', () => {
-    document.getElementById('input1').changeValue('This Field Is Read Only');
-    document.getElementById('input1').toggleAttribute('readonly');
-
-});

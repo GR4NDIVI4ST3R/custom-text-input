@@ -29,7 +29,30 @@
     <button id="btn2" class="btn">Clear All Fields</button>
     <button id="btn3" class="btn">Toggle Read Only</button>
 
-    <script src="./text-input.js"></script>
+    <script src="../text-input.js"></script>
+    <script>
+        // Fill Fields btn
+        document.getElementById('btn1').addEventListener('click', () => {
+            Array.from(document.getElementsByTagName('text-input')).forEach(element => {
+                element.changeValue('John Doe');
+            });
+        });
+
+        // Clear All Fields btn
+        document.getElementById('btn2').addEventListener('click', () => {
+            Array.from(document.getElementsByTagName('text-input')).forEach(element => {
+                element.changeValue('');
+            });
+
+        });
+
+        // Toggle readonly
+        document.getElementById('btn3').addEventListener('click', () => {
+            document.getElementById('input1').changeValue('This Field Is Read Only');
+            document.getElementById('input1').toggleAttribute('readonly');
+
+        });
+    </script>
 
 </body>
 </html>

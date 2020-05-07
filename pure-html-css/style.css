@@ -69,10 +69,10 @@
     transition: all var(--animation-duration) ease;
 }
 
-/* Move input-label up when focused OR when there is text left in the input */
+/* Move input-label up/down when focused OR when there is text left in the input */
 .text-input-container .text-input:focus ~ .label-container .input-label,
 .text-input-container .text-input:not(:placeholder-shown) ~ .label-container .input-label {
-    transform: translateY(100%); /* Bring label down by 100% of its height, therefore, aligning its top edge with the top edge of the main container */
+    transform: translateY(100%); /* Bring label up/down by 100% of its height, therefore, aligning its top edge with the top edge of the main container */
     color: var(--secondary-color); /* Optional */
 }
 

@@ -1,4 +1,7 @@
 # custom-text-input
+Version: Beta 1.1.0 --6 May 2020
+Creator: Xavior Pautin
+
 Customized text input element that can be implemented via pure HTML/CSS or via Web Component
 
 • To use it as a web component, just copy text-input.js into your project and link it with a script:src tag
